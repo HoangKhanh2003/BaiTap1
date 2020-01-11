@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>layout kenh14</title>
+    <meta charset="utf-8">
+
+    <style>
+    
+.header_1
+{
+    padding: 10px;
+    background-color: black;
+
+}
+.header_1_1 a
+{
+
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0px 30px;
+    padding: 10px 0px;
+}
+.header_1 input
+{
+    float: right;
+    background-color: black;
+    color: white;
+}
+
+.header_2
+{
+    padding: 40px ;
+    background-color: #FFCC00;
+}
+
+.header_2_2 a
+{
+    color: white;
+    text-decoration: none;
+    margin: 0px 5%;
+    padding: 30px;
+}
+
+
+.header_3
+{
+    background-color: #990000;
+    padding: 10px;
+}
+
+.header_3_3 a
+{
+    color: white;
+    text-decoration: none;
+    margin: 20px 15px;
+    padding: 10px 5px;
+}
+
+.img
+{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #cccccc;
+    float: initial;
+}
+  .header_1_1 a:hover
+  {
+      background-color: thistle;
+      color: slateblue;
+      font-weight: 700;
+  }
+  .header_2_2 a:hover
+  {
+      background-color: thistle;
+      color: turquoise;
+      font-weight: 800;
+  }
+  .header_3_3 a:hover
+  {
+      background-color: thistle;
+      color: red;
+      font-weight: 500;
+  }
+.Body_tintuc
+{
+    margin:0px 17%;
+    width: 65%;
+    height: 3700px;
+    
+}
+.Row_1
+{
+    float: initial;
+    height: 70%;
+}
+.Row_2
+{
+    float: initial;
+    padding: 20px 0px;
+}
+.Column_Main
+{
+    float: left;
+    width: 100%;
+}
+.Column_M_L
+{
+    float:  left;
+    width: 68%;
+    padding: 20px 20px;
+}
+.Column_M_L::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.Column_M_R
+{
+    float: right;
+    width: 27%;
+
+}
+.Column_M1_R1
+{
+    float:  left;
+}
+.Column_M1_R2
+{
+    float:left;
+    padding: 20px 0px;
+}
+
+.Card_1
+{
+    display: block;
+    background-color: red;
+    height: 400px;
+    width: 515px;
+}
+.Card_QC
+{
+    margin: 20px 0px;
+    width: 300px;
+    height: 700px;
+    background-color: royalblue;
+}
+.Field
+{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px 0px;
+}
+.Field a
+{
+    padding: 20px 10px;
+    text-decoration: none;
+}
+.Footer a
+{
+    color: black;
+    text-decoration: none;
+}
+.Field a:hover
+{
+    background-color: chartreuse;
+    padding: 10px;
+}
+.Footer input:hover
+{
+    background-color: cyan;
+    padding: 20px;
+}
+.Post_7 .Row_1 a
+{
+    margin : 0px 80px;
+    color: black;
+}
+  .dropbtn
+{
+    background-color:#990000;
+    padding: 10px;
+    border: #990000;
+    color: white    ;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown:hover .dropdown-content {display: block;}
+.dropbtn:hover {background-color: #3e8e41;}
+
+.drop_details
+{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn_details
+{
+    background-color:#f1f1f1;
+    padding:10px 80px;
+    border: #990000;
+    color: black  ;
+}
+.dropContent_details
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 220px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin:-50px 210px;
+}
+.dropContent_details a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop_details:hover .dropContent_details{display: block;}
+.dropbtn_details:hover {background-color: #3e8e41;}
+    </style>
+</head>
+<body>
+    <div class="Header"  >
+            <div class="header_1">
+                <div class="header_1_1" style=" margin: 0px 13.5%;">
+                    <a  href="http://kenh14.vn/">Magazin</a>
+                    <a href="http://kenh14.vn/">Đọc Chậm</a>
+                    <a href="http://kenh14.vn/">Khám Phá</a>
+                    <input type= "button" onclick=""  size="30px">
+                    <input type="text" placeholder="Tìm Kiếm..." >    
+                </div>
+            </div>
+            <div class="header_2" >
+                <div class="header_2_2"style="margin: 0px 8%;" >
+                    <a href="http://kenh14.vn/" >Text 1</a>
+                    <a href="http://kenh14.vn/">Text 2</a>
+                    <a href="http://kenh14.vn/">Text 3</a>
+                    <a href="http://kenh14.vn/">Text 4</a>  
+                </div>
+            </div>
+            <div class="header_3">
+                <div class="header_3_3" style="margin: 0px 14%;">
+                    <div class="dropdown">
+                        <button class="dropbtn">Danh Sách</button>
+                        <div class="dropdown-content">
+                            <div class="drop_details">
+                                <button class="dropbtn_details">Tv Show</button>
+                                <div class="dropContent_details">
+                                    <a href="#">Thách Thức Danh Hài</a>
+                                    <a href="#">Giong Ải Giong Ai</a>
+                                    <a href="#">Phim Hành Động</a>
+                                </div>
+                            </div>  
+                            
+                            <div class="drop_details">
+                                <button class="dropbtn_details">Âm Nhạc</button>
+                                <div class="dropContent_details">
+                                    <a href="#">Sơn Tùng</a>
+                                    <a href="#">G-Dragons</a>
+                                    <a href="#">BigBang</a>
+                                </div>
+                            </div>
+                            <div class="drop_details">
+                                <button class="dropbtn_details">Beaty Fashion</button>
+                                <div class="dropContent_details">
+                                    <a href="#">Hiện Đại</a>
+                                    <a href="#">Cổ Điển</a>
+                                    <a href="#">Giản Dị</a>
+                                </div>
+                            </div>
+                            <div class="drop_details">
+                                <button class="dropbtn_details">Đời Sống</button>
+                                <div class="dropContent_details">
+                                    <a href="#">Pháp Luật</a>
+                                    <a href="#">Văn Hóa</a>
+                                    <a href="#">Sức Khỏe</a>
+                                </div>
+                            </div>
+                            
+                          </div>
+                      </div>
+                    <a href="#">Text 1</a>
+                    <a href="#">Text 2</a>
+                    <a href="#">Text 3</a>
+                    <a href="#">Text 4</a>
+                    <a href="#">Text 5</a>
+                    <a href="#">Text 6</a>
+                    <a href="#">Text 7</a>
+                    <a href="#">Text 8</a>
+                    <a href="#">Text 9</a>
+                    <a href="#">Text 10</a>
+                    <a href="#">Text 11</a>
+                    <a href="#">Text 12</a>
+                    <a href="#">Text 13</a>
+                    <a href="#">Text 14</a>
+                   
+                </div>
+            </div>
+            <div class="img">
+                <div class="img_2"style="margin: 0px 40%">
+                    <a href="http://kenh14.vn/"><img src="http://kenh14cdn.com/zoom/320_200/2018/3/16/photo1521167209368-15211672093681684823102.jpg" alt="center" width="90%"></a>
+                </div>
+            </div>
+    </div> 
+    <div class="Body_tintuc">
+        <div class="Column_Main">
+            <div class="Column_M_L">
+
+                <div class="Post_1">
+                    <div class="Row_1">
+                        <div class="Column_M1_R1">
+                            <div class="Card_1"></div>
+                        </div>
+                        <div class="Column_M1_R1">
+                            <div class="Card_1" style="width: 250px;margin: 0px 20px"></div>
+                        </div>
+                    </div>
+                    <div class="Row_2">
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 250px;margin: 0px 20px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 250px;"></Div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Post_2">
+                    <div class="Row_2" >
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 520px;margin: 0px 20px;"></Div>
+                        </div>
+                    </div>
+                    <div class="Row_2" >
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 520px;margin: 0px 20px;"></Div>
+                        </div>
+                    </div><div class="Row_2" >
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 520px;margin: 0px 20px;"></Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Post_3">
+                    <div class="Row_1">
+                        <div class="Column_M1_R1" style="background-color: blue;width: 785px;height: 760px;">
+                            <div class="Post_2">
+                                <div class="Row_2" >
+                                    <div class="Column_M1_R2" >
+                                        <Div class="Card_1" style="height: 200px;width: 200px;margin: 0px 20px ;">A</Div>
+                                    </div>
+                                    <div class="Column_M1_R2">
+                                        <Div class="Card_1" style="height: 200px;width: 500px;margin: 0px 10px;">B</Div>
+                                    </div>
+                                </div>
+                                <div class="Row_2" >
+                                    <div class="Column_M1_R2" >
+                                        <Div class="Card_1" style="height: 200px;width: 200px;margin: 0px 20px ;">A</Div>
+                                    </div>
+                                    <div class="Column_M1_R2">
+                                        <Div class="Card_1" style="height: 200px;width: 500px;margin: 0px 10px;">B</Div>
+                                    </div>
+                                </div><div class="Row_2" >
+                                    <div class="Column_M1_R2" >
+                                        <Div class="Card_1" style="height: 200px;width: 200px;margin: 0px 20px ;">A</Div>
+                                    </div>
+                                    <div class="Column_M1_R2">
+                                        <Div class="Card_1" style="height: 200px;width: 500px;margin: 0px 10px;">B</Div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Post_4">
+                    <div class="Row_2" >
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 520px;margin: 0px 20px;"></Div>
+                        </div>
+                    </div>
+                    <div class="Row_2" >
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 520px;margin: 0px 20px;"></Div>
+                        </div>
+                    </div>
+                    <div class="Row_2" >
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 245px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 200px;width: 520px;margin: 0px 20px;"></Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Post_5">
+                    <div class="Row_1">
+                        <div class="Column_M1_R1">
+                            <div class="Card_1" style="width : 385px"></div>
+                        </div>
+                        <div class="Column_M1_R1">
+                            <div class="Card_1" style="width : 380px;margin: 0px 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Post_6">
+                    <div class="Row_2">
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                        </div>
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                        </div><div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 245px;margin:20px 10px;"></Div>
+                        </div>   
+                    </div>       
+                </div>
+
+            </div>
+            <DIV class="Column_M_R">
+                <div class="Card_QC"></div>
+                <div class="Card_QC"></div>
+                <div class="Card_QC" style="height:745px;">
+                    <div class="Row_2">
+                        <div class="Column_M1_R2">
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:5px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                            <Div class="Card_1" style="height: 53px;width: 260px;margin:20px 20px;"></Div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card_QC"></div>
+                <div class="Card_QC"></div>
+            </DIV>
+    </div>
+    </div>
+
+    <div class="Field">
+        <a href="#">Star</a>
+        <a href="#">Musik</a>
+        <a href="#">Ciné</a>
+        <a href="#">Tv Show</a>
+        <a href="#">Beaty Fashion</a>
+        <a href="#">Đời Sống</a>
+        <a href="#">Xã Hội</a>
+        <a href="#">Thế Giới</a>
+        <a href="#">Giới Tính</a>
+        <a href="#">Made By Me</a>
+        <a href="#">Sport</a>
+        <a href="#">Khám Phá</a>
+        <a href="#">2-Tek</a>
+        <a href="#">Lạ & Cool</a>
+        <a href="#">Học Đường</a>
+        <a href="#">Video</a>
+        <a href="#">Quizz</a>
+    </div>
+    <DIV class="Post_7">       
+        <div class="Row_1">
+            <div class="Column_M1_R1">
+                <div class="Card_1" style="height: 200px;width:1200px;margin:5px 25%;"></div>        
+            </div>
+        </div>
+        <div class="Row_1">
+            <div class="Column_M1_R1">
+                <div class="Card_1" style="height: 200px;width:595px;margin:40% -151.5%;background-color: white;">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Logo-Kenh14.jpg" style="height: 80px;margin:0px -80px ;"></a>ĐÓNG GÓP NỘI DUNG<br>
+                    <a href="http://kenh14.vn/"><input type="button" value="CÂU HỎI THƯỜNG GẶP " ></a><br>
+                    <a href="#" style="text-decoration: none;">bandoc@kenh14.vn</a><br>
+                    <p style="margin:0px 80px;">
+                        
+                    Kenh14.vn rất hoan nghênh độc giả gửi thông tin và góp ý cho chúng tôi.
+                    </p>
+                
+                </div> 
+                <div class="Card_1" style="height: 200px;width:595px;margin:-73.5% -50%;background-color: white;">
+                <a href="#"><img src="https://static.ybox.vn/2019/4/3/1555435269159-1554094062866-k14.png"style="height : 200px" alt="logo"></a>
+                
+                </div>         
+            </div>
+        </div>
+    </DIV>
+    <div class="Footer" style="margin:22% 15.8%;">
+        <div class="Row_2">
+            <div class="Column_M1_R2">
+                
+                <Div class="Card_1" style="height: 250px;width: 385px;margin:20px 10px;background-color: white;" >
+                    TRỤ SỞ HÀ NỘI<br>
+
+                    Tầng 21, tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, p. Thanh Xuân Trung, quận Thanh Xuân, Hà Nội. Điện thoại: 024 7309 5555, máy lẻ 370.<br><br>
+
+                    TRỤ SỞ TP.HỒ CHÍ MINH<br>
+                    
+                    Tầng 4 Tòa nhà 123, 123 Võ Văn Tần, phường 6, quận 3, Tp. HCM Điện thoại: 028. 7307 7979
+                    
+                    </Div>
+            </div>
+            
+            <div class="Column_M1_R2">
+                
+                <Div class="Card_1" style="height: 250px;width: 385px;margin:20px 10px;background-color: white;">
+                    CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG<br>
+                    Bà Nguyễn Bích Minh<br>                    
+                    HỢP TÁC TRUYỀN THÔNG<br>                  
+                    024.73095555 (máy lẻ 62.370)<br>   <br>                 
+                    <a href="#">marketing@kenh14.vn</a><br>
+
+                    LIÊN HỆ QUẢNG CÁO<br>                   
+                    0942 86 11 33<br>
+                    <a href="#">giaitrixahoi@admicro.vn</a><br><br> 
+                    <input type="button" value="VỚI TƯ VẤN VIÊN XEM CHI TIẾT" style="background-color: skyblue;border-color: skyblue;"> <br>
+                    <input type="button" value="XEM CHI TIẾT" style="background-color: orange;border-color: skyblue;"> <br>
+                    <a href="#">CHÍNH SÁCH BẢO MẬT</a></Div>
+            </div>
+            
+            <div class="Column_M1_R2">
+                <a href="https://vccorp.vn/"><img src="https://vccorp.vn/Images/vccorp-15b8528c47c28f0b.png" alt="Logo" style="height: 20px;"></a>
+                <Div class="Card_1" style="height: 250px;width: 390px;margin:20px 10px;background-color: white;">                       
+                © Copyright 2007 - 2020 – CÔNG TY CỔ PHẦN VCCORP <br>
+                Tầng 17, 19, 20, 21 Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.<br>
+                Giấy phép số 2215/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 10 tháng 4 năm 2019</Div>
+            </div>
+            
+        </div>
+    </div>
+<img src="" alt="">
+
+</body>  
+</html>   
