@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai tap 2</title>
+    <meta charset="utf-8">
+    <style>
+        .Header {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            background-color: white;
+        }
+
+        .Header_1 {
+            display: block;
+            background-color: black;
+            height: 35px;
+            width: 1850px;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding-top: 20px;
+
+        }
+
+        .Header_2 {
+            float: left;
+            position: relative;
+            top: 20px;
+            left: 250px;
+
+        }
+
+        .Header_2 input {
+            float: left;
+            height: 40px;
+            width: 300px;
+            position: relative;
+            top: 10px;
+            left: 150px;
+        }
+
+        .Header_2 a {
+            color: black;
+            text-decoration: none;
+            float: left;
+
+        }
+
+        .Account {
+            float: left;
+        }
+
+        .Clearfix::before {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .Header_2::after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        .New {
+            float: left;
+            height: 100px;
+        }
+
+        .Header_3 {
+
+            height: 50px;
+            text-align: center;
+
+        }
+
+        .Column_1 {
+            float: left;
+            width: 23%;
+
+        }
+
+        .Column_2 {
+            float: left;
+            width: 23%;
+
+        }
+
+        .Column_3 {
+            float: left;
+            width: 23%;
+
+
+        }
+
+        .Column_4 {
+            float: left;
+            width: 27%;
+
+        }
+
+        .Hoverable_Dropdown {
+            position: relative;
+            top: 0px;
+
+            display: inline-block;
+
+        }
+
+        .Hoverable_Dropdown_Btn {
+            background-color: white;
+            padding: 16px 30px;
+            border: white;
+            color: black;
+
+        }
+
+        .Hoverable_Dropdown_Content {
+            display: none;
+            position: absolute;
+            background-color: #eeeeee;
+
+            width: 1060px;
+            height: auto;
+            z-index: 6;
+
+        }
+
+        .Hoverable_Dropdown_Content a {
+            color: black;
+            padding: 20px 40px;
+            text-decoration: none;
+            text-emphasis: none;
+            display: block;
+        }
+
+        .Hoverable_Dropdown:hover .Hoverable_Dropdown_Content {
+            display: block;
+        }
+
+        .Hoverable_Dropdown_Btn:hover {
+            background-color: #3399FF;
+        }
+
+        .Header_4 {
+
+            text-align: center;
+            background-color: #3399FF;
+            height: 40px;
+            padding-top: 20px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .Review {
+            color: white;
+            float: left;
+            position: fixed;
+            top: 503px;
+            left: -26px;
+            padding: 15px 30px;
+            background-color: #3399FF;
+            font-size: 20px;
+            transform: rotate(-90deg);
+        }
+
+        .Review a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .BodyPage {
+            position: relative;
+            top: 256px;
+            left: 18%;
+            width: 65%;
+
+
+        }
+
+        .BodyPage p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Post_1 {
+            height: 650px;
+            float: left;
+        }
+
+        .Row_1 {
+            height: 49%;
+        }
+
+        .Row_1 img {
+            width: 385px;
+
+        }
+
+        .Post_1 a {
+            text-decoration: none;
+        }
+
+        .Row_1 p {
+            position: relative;
+            top: -190px;
+            left: -400px;
+            font-size: 40px;
+            color: white;
+            display: table;
+            background-color: whitesmoke;
+        }
+
+        .Row_2 {
+            width: 100%;
+
+        }
+
+        .Row_2 img {
+            width: 210px;
+            height: 200px;
+            padding-right: 23px;
+        }
+
+        .Row_2 .Card {
+            float: left;
+
+        }
+
+        .BodyPage a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .Infor a:hover {
+            color: #99ccFF;
+        }
+
+        .Post_6 {
+            position: relative;
+            top: 292px;
+            text-align: center;
+            padding: 0px;
+            background-color: #3399FF;
+            font-size: 25px;
+        }
+
+        .Post_6 input {
+            height: 40px;
+
+            position: relative;
+            top: -5px;
+            left: 70px;
+        }
+
+        .Footer {
+            position: relative;
+            top: 282px;
+            background-color: #222;
+            height: 330px;
+        }
+
+        .Footer_Column {
+            float: left;
+            position: relative;
+            top: 0px;
+            left: 20%;
+            width: 12%;
+            color: white;
+            padding: 20px 0px;
+            height: 50%;
+        }
+
+        .Footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Footer a:hover {
+            color: #dddddd;
+        }
+
+        .Footer span {
+            font-size: 30px;
+        }
+
+        .Footer_Last {
+            position: relative;
+            top: 250px;
+            left: -60%;
+            width: 160%;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Header">
+
+        <div class="Header_1">
+            Free Shipping | Monogram available | Rush Shipping <strike>$20</strike> now $8.99!
+        </div>
+        <div class="Header_2">
+            <a href="https://www.briefcase.com/">
+                <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/original/logo_1577293772__04466.original.jpg"
+                    alt="https://www.briefcase.com/" title="https://www.briefcase.com/">
+            </a>
+            <input type="search" placeholder="Search ?" style="height: 34px;">
+            <input type="button" style="width: 40px;height: 34px;">
+
+            <div class="Account" style="position: relative;top: 15px;left: 250px;">
+                <a href="https://www.briefcase.com/">
+                    <img style="width: 50px;float: left;"
+                        src="https://mpng.pngfly.com/20180420/krw/kisspng-computer-icons-mobile-app-development-android-my-account-icon-5ada4ab46cb066.5797683215242554124452.jpg"
+                        alt="">
+                </a>
+                <a href="https://www.briefcase.com/" style="position: relative;top: 7px;">My Account</a>
+
+                <a href="https://www.briefcase.com/">
+                    <img style="height: 50px;position: relative;top: -10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtlc4Iod5z6vxJ3KUY9HI6hhup0CT3vxGIrp-LPBHvhG-4lYuT&s"
+                        alt="">
+                    <a href="https://www.briefcase.com/" style="position: relative;top: 7px;left: -10px;">Gift
+                        Certificates</a>
+                </a>
+                <a href="https://www.briefcase.com/">
+                    <img style="height: 30px;position: relative;top: 0px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnoRUnyCSmh0KlHcw7U1p33qkJqLbH7UampMD0RSzBxvyr-GH&s"
+                        alt="">
+                </a>
+            </div>
+        </div>
+        <div class="New"></div>
+        <div class="Clearfix"></div>
+        <div class="Header_3">
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">BRIEFCASES</button>
+                <div class="Hoverable_Dropdown_Content">
+                    <div class="Column_1">
+                        <a href="#">ALL BRIEFCASES</a>
+                        <a href="#">SMALL-MEDIUM BRIEFCASES</a>
+                        <a href="#">HARD-SIDED BRIEFCASES</a href="#">
+                        <a href="#">LOCKABLE BRIEFCASES</a href="#">
+                        <a href="#">WHEELED CASES</a href="#">
+                        <a href="#">NON-LEATHER BRIEFCASES</a href="#">
+                    </div>
+                    <div class="Column_2">
+                        <a href="#">BRIEFCASES FOR MEN</a href="#">
+                        <a href="#">STANDARD SIZE BRIEFCASES</a href="#">
+                        <a href="#">FLAP OVER BRIEFCASES</a href="#">
+                        <a href="#">LAPTOP BAGS</a href="#">
+                        <a href="#">CATALOG / PILOT CASES</a href="#">
+                        <a href="#">WOMEN'S HANDBAGS</a href="#">
+                    </div>
+                    <div class="Column_3">
+                        <a href="#">BRIEFCASES FOR WOMEN</a href="#">
+                        <a href="#">LARGE BRIEFCASES</a href="#">
+                        <a href="#">ZIPPER TOP BRIEFCASES</a href="#">
+                        <a href="#">ATTACHE CASES</a href="#">
+                        <a href="#">LITIGATOR BRIEF BAGS</a href="#">
+                        <a href="#">UTILITY CASES</a href="#">
+                    </div>
+                    <div class="Column_4">
+                        <a href="#">LEATHER BRIEFCASES</a href="#">
+                        <a href="#">SOFT-SIDED</a href="#">
+                        <a href="#">EXPANDABLE BRIEFCASES</a href="#">
+                        <a href="#">BRIEFCASES</a href="#">
+                        <a href="#">ALUMINUM CASES</a href="#">
+                        <a href="#">ITALIAN LEATHER BRIEFCASES</a href="#">
+                    </div>
+                </div>
+            </div>
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">MESSENGER BAGS</button>
+                <div class="Hoverable_Dropdown_Content" style="position: absolute;top: 50px;left: -152px;">
+
+                    <div class="Column_1">
+                        <a href="#"> ALL MESSENGER BAGS </a href="#">
+                    </div>
+                    <div class="Column_2">
+                        <a href="#">LEATHER MESSENGER BAGS </a href="#">
+                    </div>
+                    <div class="Column_3">
+                        <a href="#">LAPTOP MESSENGER BAGS </a>
+                    </div>
+                    <div class="Column_4">
+                        <a href="#">NON-LEATHER MESSENGER BAGS</a href="#">
+                    </div>
+                </div>
+            </div>
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">BACKPACKS</button>
+                <div class="Hoverable_Dropdown_Content" style="position:absolute ;top: 50px;left: -350px;">
+
+                    <div class="Column_1">
+                        <a href="#">ALL BACKPACKS </a href="#">
+                        <a href="#"> STANDARD SIZE BACKPACKS </a href="#">
+                        <a href="#">HANDBAG BACKPACKS</a href="#">
+                    </div>
+                    <div class="Column_2">
+                        <a href="#">LEATHER BRIEFCASES</a href="#">
+                        <a href="#">LARGE BACKPACKS</a href="#">
+                    </div>
+                    <div class="Column_3">
+                        <a href="#">NON-LEATHER BACKPACKS </a href="#">
+                        <a href="#"> LAPTOP BACKPACKS </a href="#">
+                    </div>
+                    <div class="Column_4">
+                        <a href="#">SMALL-MEDIUM BACKPACKS</a href="#">
+                        <a href="#">SLINGS / CROSS BODY</a href="#">
+                    </div>
+                </div>
+            </div>
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">DUFFLE BAGS</button>
+                <div class="Hoverable_Dropdown_Content" style="position:absolute ;top: 50px;left: -497px;">
+                    <div class="Column_1">
+                    </div>
+                    <div class="Column_2">
+                    </div>
+                    <div class="Column_3">
+                    </div>
+                    <div class="Column_4">
+                    </div>
+                </div>
+            </div>
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">LUGGAGE</button>
+                <div class="Hoverable_Dropdown_Content" style="position:absolute ;top: 50px;left: -655px;">
+                    <div class="Column_1">
+                        <a href="#">ALL LUGGAGE</a href="#">
+                    </div>
+                    <div class="Column_2">
+                        <a href="#">GARMENT BAGS</a href="#">
+                    </div>
+                    <div class="Column_3">
+                        <a href="#">OVERNIGHT / CARRY ON'S</a href="#">
+                    </div>
+                    <div class="Column_4">
+                        <a href="#">ITALIAN LEATHER LUGGAGE</a href="#">
+                    </div>
+                </div>
+            </div>
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">BACKPACKS</button>
+                <div class="Hoverable_Dropdown_Content" style="position:absolute ;top: 50px;left: -790px;">
+                    <div class="Column_1">
+                        <a href="#"> ALL ACCESSORIES </a href="#">
+                        <a href="#"> DAY BAGS / FANNY PACKS</a href="#">
+                    </div>
+                    <div class="Column_2">
+                        <a href="#">TABLET CASES / PADFOLIOS</a href="#">
+                        <a href="#">LWINE CARRIERS</a href="#">
+                    </div>
+                    <div class="Column_3">
+                        <a href="#">SHAVING KITS / TOILETRY BAGS</a href="#">
+                        <a href="#"> OTHER ACCESSORIES </a>
+                    </div>
+                    <div class="Column_4">
+                        <a href="#">WALLETS</a href="#">
+                    </div>
+                </div>
+            </div>
+            <div class="Hoverable_Dropdown">
+                <button class="Hoverable_Dropdown_Btn">BRANDS</button>
+                <div class="Hoverable_Dropdown_Content" style="position:absolute ;top: 50px;left: -940px;">
+                    <div class="Column_1">
+                        <a href="#"> ALIENWARE </a href="#">
+                        <a href="#">BUCCIO </a>
+                        <a href="#">FLOTO </a>
+                        <a href="#">LE DONNE</a>
+                        <a href="#">PIEL</a>
+                        <a href="#">ROBERT MYERS </a>
+                        <a href="#">SWISS ARMY VICTORINOX </a>
+                    </div>
+                    <div class="Column_2">
+                        <a href="#">AMERICAN WEST</a href="#">
+                        <a href="#">CLAIRE CHASE</a>
+                        <a href="#">JACK GEORGES </a>
+                        <a href="#"> MANCINI </a>
+                        <a href="#">PRATT LEATHER </a>
+                        <a href="#">SAMSONITE</a>
+                        <a href="#">TUSCANY LEATHER</a>
+                    </div>
+                    <div class="Column_3">
+                        <a href="#">AMERILEATHER </a href="#">
+                        <a href="#">DAVID KING</a>
+                        <a href="#">MCKLEIN USA </a>
+                        <a href="#">RAWLINGS </a>
+                        <a href="#">SIAMOD</a>
+                        <a href="#">TZ CASE</a>
+                        <a href="#">KENNETH COLE</a>
+                    </div>
+                    <div class="Column_4">
+                        <a href="#">BRAHMA CASE </a href="#">
+                        <a href="#"> EDMOND LEATHER </a>
+                        <a href="#">KENNETH COLE </a>
+                        <a href="#">KORCHMAR </a>
+                        <a href="#">MOBILE EDGE </a>
+                        <a href="#">RAZER </a>
+                        <a href="#">SOLO</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="Header_4">
+            Winter Sale & Clearance! | Save 40%-70% off + today extra 10% off | Promo code: "10TODAY"
+            <a href="#" style="text-decoration: none; color: white;">Details</a>
+        </div>
+
+    </div>
+
+    <div class="Review">
+        <a href="#">Review</a></div>
+    </div>
+    <div class="BodyPage">
+        <div class="Advertise">
+
+            <a href="#"><img
+                    src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/theme_images/herolg-winterclearance.jpg?t=1578518782"
+                    alt=""></a>
+        </div>
+        <div class="Post_1">
+            <p>Featured Categories</p>
+            <div class="Row_1">
+
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/attache-cases-promo.jpg"
+                        alt="ATTACHE CASE">
+                </a>
+
+                <a style="text-align: center;" href="https://www.briefcase.com/luggage/duffle-bags/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/duffles-promo.jpg"
+                        alt="">
+                </a>
+
+                <a style="text-align: center;" href="https://www.briefcase.com/backpacks/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/backpacks-promo.jpg"
+                        alt="">
+                </a>
+
+                <a href="https://www.briefcase.com/briefcases/laptop-bags/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/laptop-bags-promo.jpg"
+                        alt="">
+                </a>
+
+                <a href="https://www.briefcase.com/briefcases/messenger-bags/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/messengers-promo.jpg"
+                        alt="">
+                </a>
+
+                <a href="https://www.briefcase.com/briefcases/womens-handbags/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/categorybanner-women.jpg"
+                        alt="">
+                </a>
+
+
+            </div>
+        </div>
+        <div class="Post_2">
+            <div class="Row_2">
+                <p>Featured Best Sellers</p>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3745/15351/xl8d2dyv8cBNPe79_FzK6mpZl2l8jHrZKc9SUzYEaDw__40603.1439850134.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3929/18836/Screenshot_2016_02_09_at_11.07.22_AM__34440.1455038533.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3815/21116/1__31892.1471382186.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4685/27622/Screen_Shot_2019-05-14_at_10.05.54_AM__21017.1557846467.png?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4833/27642/Screen_Shot_2019-05-21_at_12.06.48_PM__94200.1558458426.png?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4117/14420/Screen_Shot_2015_06_15_at_4.10.12_PM__70561.1438032123.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3262/28066/el7264__97825.1576366339.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3116/9724/CC-147-2__75794.1432743556.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3264/19206/el9159tan__49639.1459782735.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3747/19224/Screenshot_2016_04_11_at_2.37.11_PM__28073.1460403447.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4832/27652/palermo__83222.1558537652.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4846/25787/DK-350-2__31490.1500990374.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4105/27251/bradleyangle__01912.1531758616.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3922/24836/mauriceespresso__93508.1489440262.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3248/16137/2Q__55880.1441485775.jpg?c=2&imbypass=on"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/mancini-luxurious-laptop-litigator-briefcase-95859/">
+                                Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="Post_3">
+            <p>Featured Items</p>
+            <div class="Row_1">
+
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/monogram-it.jpg"
+                        alt="" title="Cases">
+                </a>
+
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/highest-rated-attache.jpg"
+                        alt="" title="Cases">
+                </a>
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/mostpopular.jpg"
+                        alt="" title="Cases">
+                </a>
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/featured-brand-banner.jpg?t=2"
+                        alt="" title="Cases">
+                </a>
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/made-in-italy.jpg"
+                        alt="" title="Cases">
+                </a>
+                <a style="text-align: center;" href="https://www.briefcase.com/briefcases/attache-cases/">
+                    <img src="https://cdn11.bigcommerce.com/s-h7ug7/content/../product_images/uploaded_images/bannerattorney.jpg    "
+                        alt="" title="Cases">
+                </a>
+            </div>
+        </div>
+        <div class="Post_4">
+
+
+            <div class="Row_2">
+                <p>Featured Best Sellers</p>
+                <div class="Card">
+                    <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3928/26035/jackson__85987.1506451051.jpg?c=2"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/"> Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3264/19206/el9159tan__49639.1459782735.jpg?c=2"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/"> Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3953/26725/471__00829.1517326443.png?c=2"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/"> Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/4821/24825/pl-3__25277.1488507432.jpg?c=2"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/"> Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="Card">
+                    <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/images/stencil/500x659/products/3729/14140/Screen_Shot_2015_05_29_at_3.31.39_PM__17439.1432931846.jpg?c=2"
+                            alt="" title="Cases">
+                    </a>
+                    <p>
+                        <div class="Infor" style="text-align: center;">
+                            <a href="https://www.briefcase.com/pratt-leather-jackson-satchel-371/"> Leather Business<br>
+                                Briefcase<br></a>
+                            <strike>$305.00</strike> <span style="color: #99ccff;">$189.99</span>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="Post_5">
+            <div class="Row_2">
+                <a href="https://www.briefcase.com/brands.php"
+                    style="width: 120%;position: relative;top: 90px;left:83%;font-size: 20px;color: #99ccff;">View All
+                    Brands</a>
+                <p>Featured Brands</p>
+
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/uploaded_images/edmond-leather.jpg"
+                            alt="" title="Brands" style="width:170px;height:100px">
+                    </a>
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/uploaded_images/pratt-leather.jpg"
+                            alt="" title="Brands" style="width:170px;height:100px">
+                    </a>
+
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/uploaded_images/rawlings.jpg"
+                            alt="" title="Brands" style="width:170px;height:100px">
+                    </a>
+
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/uploaded_images/claire-chase.jpg"
+                            alt="" title="Brands" style="width:170px;height:100px">
+                    </a>
+
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/uploaded_images/samsonite.jpg"
+                            alt="" title="Brands" style="width:170px;height:100px">
+                    </a>
+
+                </div>
+                <div class="Card">
+                    <a href="">
+                        <img src="https://cdn11.bigcommerce.com/s-h7ug7/product_images/uploaded_images/buccio.jpg"
+                            alt="" title="Brands" style="width:170px;height:100px">
+                    </a>
+
+                </div>
+
+
+            </div>
+
+            <div class="New"></div>
+            <div class="Clearfix"></div>
+        </div>
+    </div>
+
+    <div class="Post_6">
+        Get On The List! Sign up For Vip Specials
+        <input type="search" placeholder="Your email address" style="width: 250px;">
+        <input type="button" style="width: 50px;position: relative;top: 11px;left: 64px;">
+    </div>
+    <div class="Footer">
+
+        <div class="Footer_Column">
+            <span>Contact</span><br><br>
+            <a href="#">@briefcase.com</a>
+
+            <a href="https://www.facebook.com/">
+                <img style="height: 30px;position: relative;top: 60px;left: -50%; ;"
+                    src="http://www.vicesofvanity.com/wp-content/uploads/2017/10/black-facebook.png" alt="">
+
+            </a>
+            <a href="https://twitter.com/">
+                <img style="height: 30px;position: relative;top: 60px;left: -50%; ;"
+                    src="https://www.castleford.com.au/wp-content/uploads/2017/05/make-your-fresh-content-stand-out-on-the-web-with-a-new-twitter-widget_16000265_800477076_0_0_14005378_300.jpg"
+                    alt="">
+            </a>
+        </div>
+        <div class="Footer_Column">
+            <span>My Account</span> <br><br>
+            <a href="#">Login </a><br>
+            <a href="#">Create an Account</a><br>
+            <a href="#">My Cart</a>
+        </div>
+
+        <div class="Footer_Column">
+            <span>Information</span> <br><br>
+            <a href="#">Contact Us </a><br>
+            <a href="#">Shipping </a><br>
+            <a href="#">Returns </a><br>
+            <a href="#">Customer Reviews </a><br>
+            <a href="#">Privacy & Security</a>
+        </div>
+        <div class="Footer_Column">
+            <span>Shop</span> <br><br>
+            <a href="#">Briefcases </a><br>
+            <a href="#">Messenger Bags </a><br>
+            <a href="#">Backpacks </a><br>
+            <a href="#">Duffle Bags </a><br>
+            <a href="#">Luggage </a><br>
+            <a href="#">Accessories </a><br>
+            <a href="#">Brands</a>
+        </div>
+
+        <div class="Footer_Column">
+
+            <img src="//staticw2.yotpo.com/assets/badge.png" style="height: 150px;position: relative;top: 0px;" alt="">
+            <span style="font-size: 35px;position: relative;top: -120px;left: 40px;">7.669</span>
+
+            <span style="position: relative;top:-20px;left: -60px;font-size: 15px;">POWER BY YOTPO</span>
+            <span style="position: relative;top:-95px;left: 10px;font-size: 15px;color: black;">CERTIFIED REVIEWS</span>
+
+        </div>
+        <div class="Footer_Last">
+            <hr>
+            <span>Copyright © 2020 Briefcase.com |All prices are in USD </span>
+        </div>
+    </div>
+
+</body>
+
+</html>
